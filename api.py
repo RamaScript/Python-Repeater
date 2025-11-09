@@ -3,7 +3,7 @@ import time
 
 
 def gemini(q):
-    genai.configure(api_key="AIzaSyCm79FWDaAaftqAftv3GoXG6kP1cxX1Yho")
+    genai.configure(api_key="api")
     model = genai.GenerativeModel("gemini-1.5-flash")
     response = model.generate_content(q)
     print(response.text)
